@@ -9,7 +9,7 @@ import dash_core_components as dcc
 import dash_html_components as html
 import plotly.express as px
 from dash.dependencies import Input, Output
-def scrape_and_check(x,var_name,html_file_path='C:\\Users\\Asus\\Desktop\\Rishi\\downloaded_page.html', n=6,):
+def scrape_and_check(x,var_name,html_file_path='C:\\Users\\Asus\\Desktop\\Rishi\\downloaded_page.html', n=6,): #change the location to where u wanna store the file #
     global first_product_name
     download_html(x)
     with open(html_file_path, 'r') as file:
